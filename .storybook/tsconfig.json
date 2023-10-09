@@ -1,0 +1,16 @@
+{
+  "extends": "../tsconfig.app.json",
+  "compilerOptions": {
+    "types": ["node"],
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["../src/test.ts", "../src/**/*.spec.ts"],
+  "include": [
+    "../src/**/*",
+    "./preview.ts",
+    "../stories/button/button.stories.ts",
+    "../stories/card/card.stories.ts"
+  ],
+  "files": ["./typings.d.ts"]
+}

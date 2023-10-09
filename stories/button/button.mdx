@@ -1,0 +1,38 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/blocks";
+import * as ButtonStories from "./button.stories.ts";
+
+<Meta of={ButtonStories} />
+
+<div className="main-container">
+  # Button
+
+This is a doc on how to use the buttons.
+
+On the Canvas tab, you can check all Inputs and Outputs of the button and how they affect it.
+
+{" "}
+
+<ArgsTable story="Primary" />
+
+## Primary
+
+Used for primary and main actions.
+
+{" "}
+
+<Canvas mdxSource={<button type="primary">Primary Button</button>}>
+  <Story of={ButtonStories.Primary} />
+</Canvas>
+
+{" "}
+
+<br />
+
+## Secondary
+
+Used for secondary actions.
+
+  <Canvas mdxSource={<button type="secondary">Secondary Button</button>}>
+    <Story of={ButtonStories.Secondary} />
+  </Canvas>
+</div>
